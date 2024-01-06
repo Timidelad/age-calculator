@@ -15,23 +15,70 @@
         <div class="all-input-div">
             <div class="first-input-div inp">
                 <label for="Day">DAY</label><br>
-                <input type="number" placeholder="26">
+                <input type="number" placeholder="26" id="day" list="day" oninput="dayNumber(this)">
+                <datalist id="day">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                    <option value="16"></option>
+                    <option value="17"></option>
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                    <option value="22"></option>
+                    <option value="23"></option>
+                    <option value="24"></option>
+                    <option value="25"></option>
+                    <option value="26"></option>
+                    <option value="27"></option>
+                    <option value="28"></option>
+                    <option value="29"></option>
+                    <option value="30"></option>
+                    <option value="31"></option>
+                </datalist>
             </div>
 
             <div class="second-input-div inp">
                 <label for="month">MONTH</label><br>
-                <input type="number" placeholder="12">
+                <input type="number" placeholder="12" id="month" list="month" oninput="monthNumber(this)">
+                <datalist id="month">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                </datalist>
             </div>
 
             <div class="third-input-div inp">
                 <label for="year">YEAR</label><br>
-                <input type="number" placeholder="1999">
+                <input type="number" placeholder="1999" id="year" oninput="yearNumber(this)" title="Enter your year">
             </div>
         </div>
     
         <div class="click-div">
             <hr class="hr">
-            <a href="" class="link"><img src="./icon-arrow.svg" alt=""></a>
+            <img src="./icon-arrow.svg" alt="" id="clickImg">
         </div>
 
         <div class="display-div">
@@ -51,5 +98,7 @@
             </div>
         </div>
     </main>
+
+    <script src="./index.js"></script>
 </body>
 </html>
