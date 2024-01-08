@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    width: 375px;
+    width: 340px;
     height: 500px;
     background-color: white;
     border-radius: 15px 15px 80px 15px;
@@ -75,6 +75,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .year-div, .month-div, .day-div {
@@ -93,7 +94,10 @@ img {
 div a {
     text-decoration: none;
     color: #8146F6;
-    font-weight: 700;
+}
+
+.footer-div {
+    font-size: 13px;
 }
 
 @media  screen and (min-width: 1024px) {
