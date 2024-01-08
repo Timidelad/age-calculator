@@ -42,7 +42,7 @@ main {
 
 .click-div {
     position: relative;
-    width: 375px;
+    width: 340px;
     height: 100px;
     margin-top: 30px;
 }
@@ -51,7 +51,7 @@ main {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 45.6%;
+    left: 50%;
     width: 337.5px;
     background-color: #EDEDED;
     height: 2px;
@@ -60,15 +60,28 @@ main {
 
 img {
     position: absolute;
-    top: 20px;
     background-color: #8146F6;
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
     cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+img {
+    animation: moveUpDown 2s infinite;
 }
 
 .display-div {
