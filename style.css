@@ -4,10 +4,12 @@ body {
     box-sizing: border-box;
     background-color: #F0F0F0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    gap: 10px;
 }
 
 main {
@@ -86,6 +88,12 @@ img {
 
 .purple {
     color: #8247FB;
+}
+
+div a {
+    text-decoration: none;
+    color: #8146F6;
+    font-weight: 700;
 }
 
 @media  screen and (min-width: 1024px) {
